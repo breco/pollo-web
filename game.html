@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+       <head>
+              <title>Juego Gana una moto</title>
+              <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+              <meta id="gameViewport" name="viewport" content="width=device-width initial-scale=1">
+              <link href="styles.css" rel="stylesheet" type="text/css">
+              <script src="soundmanager2-setup.js"></script>
+  			      <script src="soundmanager2-jsmin.js"></script>
+       </head>
+
+       <body>
+              <div align="center" id="embed-html" style="margin-top:10%;"></div>
+              <script type="text/javascript" src="html/html.nocache.js"></script>
+       </body>
+
+       <script>
+              document.getElementById('gameViewport').setAttribute('content',
+                 'width=device-width initial-scale=' + 1/window.devicePixelRatio);
+
+              function handleMouseDown(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = 'default';
+                window.focus();
+              }
+
+              function handleMouseUp(evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+                evt.target.style.cursor = '';
+              }
+              document.getElementById('embed-html').addEventListener('mousedown', handleMouseDown, false);
+              document.getElementById('embed-html').addEventListener('mouseup', handleMouseUp, false);
+
+              setInterval(function(){
+                  var modalValue = localStorage.getItem( 'Preferences:states' );
+                  var coins = localStorage.getItem('Preferences:coinsi');
+                  var email = localStorage.getItem('email');
+                  if( modalValue === "dead" ){
+                    console.log("game over!");
+                    const Http = new XMLHttpRequest();
+
+                    const url='http://104.248.79.149:3000/users';
+                    Http.open("POST", url);
+                    Http.setRequestHeader("Content-Type", "application/json");
+                    
+                    Http.onreadystatechange=(e)=>{
+                      if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                            console.log("LOGRADO");
+                        }
+                    }
+
+                    Http.send('{"user" : {"email": "'+ email +'","coins": '+ coins +'}}');
+
+                    
+
+
+                    window.localStorage.setItem("Preferences:states", null)
+                     
+                  }
+              }, 3000 );
+
+
+              
+       </script>
+</html>

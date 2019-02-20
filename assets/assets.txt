@@ -1,0 +1,43 @@
+d:assets:0:application/unknown
+b:.DS_Store:10244:application/unknown
+i:arbustos 1.png:6762:image/png
+i:arbustos 2.png:4982:image/png
+i:arrow.png:1074:image/png
+i:auto 1.png:9273:image/png
+i:auto 2.png:9495:image/png
+i:auto 3.png:12729:image/png
+i:auto 4.png:10150:image/png
+d:background:0:application/unknown
+b:background/.DS_Store:6148:application/unknown
+i:background/parallax-mountain-bg.png:2025:image/png
+i:background/parallax-mountain-foreground-trees.png:6703:image/png
+i:background/parallax-mountain-montain-far.png:1093:image/png
+i:background/parallax-mountain-mountains.png:4729:image/png
+i:background/parallax-mountain-trees.png:4500:image/png
+i:background.jpg:17367:image/jpeg
+i:central pepsi.png:17143:image/png
+i:central pollo.png:31783:image/png
+i:coin.png:18050:image/png
+d:colors:0:application/unknown
+i:colors/gray.png:6750:image/png
+i:explosion.png:10612:image/png
+d:fonts:0:application/unknown
+b:fonts/.DS_Store:6148:application/unknown
+t:fonts/font.fnt:11133:application/unknown
+i:fonts/font.png:3459:image/png
+i:motorbike.png:34928:image/png
+i:pepsi coin.png:18592:image/png
+i:ruler.png:13243:image/png
+i:tree 2.png:19573:image/png
+i:tree 3.png:15367:image/png
+i:tree.png:12957:image/png
+i:valla pepsi.png:12717:image/png
+i:valla pollo stop.png:14413:image/png
+t:com/badlogic/gdx/graphics/g3d/particles/particles.fragment.glsl:859:application/unknown
+t:com/badlogic/gdx/graphics/g3d/particles/particles.vertex.glsl:2996:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.fragment.glsl:6084:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/default.vertex.glsl:9441:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.fragment.glsl:904:application/unknown
+t:com/badlogic/gdx/graphics/g3d/shaders/depth.vertex.glsl:3056:application/unknown
+t:com/badlogic/gdx/utils/arial-15.fnt:21743:application/unknown
+i:com/badlogic/gdx/utils/arial-15.png:21814:image/png
